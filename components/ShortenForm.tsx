@@ -8,7 +8,7 @@ interface ShortenFormProps{
 }
 
 const ShortenForm = ({handelUrlShortened}: ShortenFormProps) => {
-  const [url, setUrl] = useState<String>("")
+  const [url, setUrl] = useState<string>("")
   const [isLoading, setIsLoading] = useState<boolean>(false)
   const handelSubmit = async(e: React.FormEvent)=>{
     e.preventDefault()
